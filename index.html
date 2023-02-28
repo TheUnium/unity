@@ -1,0 +1,244 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home ● Unity</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            plugins: [
+                require('@tailwindcss/line-clamp')
+            ]
+        }
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style>  
+        #navlogo  
+        {  
+            width:64px;  
+            height:64px;  
+        }  
+        code{
+            background-color: #290c00;
+        }
+        </style>  
+</head>
+<body class="bg-white text-black dark:bg-black dark:text-white">
+    <header aria-label="Site Header" class="bg-gradient-to-r from-red-500 to-orange-500">
+        <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+          <div class="flex h-16 items-center justify-between">
+            <div class="md:flex md:items-center md:gap-12">
+              <a class="block text-teal-600" href="/">
+                <span class="sr-only">Home</span>
+                <img
+                    src="./images/unity_nbg.png"
+                    alt=""
+                    class="absolute inset-0 object-cover w-full h-full"
+                    id="navlogo"
+                />
+              </a>
+            </div>
+      
+            <div class="flex items-center gap-4">
+              <div class="sm:flex sm:gap-4">
+                <ul class="flex items-center gap-6 text-sm">
+                    <li>
+                      <a
+                        class="text-white transition hover:text-white/75"
+                        href="#about"
+                      >
+                        About
+                      </a>
+                    </li>
+        
+                    <li>
+                      <a
+                        class="text-white transition hover:text-white/75"
+                        href="#"
+                      >
+                        Commands [WIP]
+                      </a>
+                    </li>
+
+                    <li>
+                        <a
+                          href="https://discord.com/api/oauth2/authorize?client_id=1034772571868102676&permissions=8&scope=applications.commands%20bot"
+                          class="text-white transition hover:text-white/75"
+                        >
+                            Invite me
+                        </a>
+                      </li>
+        
+                      <li>
+                        <a
+                          href="https://discord.gg/gdQaftVKgn"
+                          class="text-white transition hover:text-white/75"
+                        >
+                            Support Server
+                        </a>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+      
+              <div class="block md:hidden">
+                <button
+                  class="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="content-center text-center">
+        <h3 class="mt-32 text-9xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-500 transition ease-in-out delay-100 hover:from-orange-500 hover:to-red-500 duration-150 mb-3">
+          Unity
+        </h3>
+        <p class="text-xs -mt-3 text-gray-500">Only up from here!</p>
+        <p class="font-light text-xl mt-2 mb-10">
+            Are you tired of adding lots of bots in each server each doing separate things? Well, introducing : Unity!<br>
+            Unity is a discord bot which has every feature you might possibly need.<br>
+            With more than 300 commands, including the ability to make custom commands, the sky is your limit!<br>
+          <a href="https://discord.com/api/oauth2/authorize?client_id=1034772571868102676&permissions=8&scope=applications.commands%20bot">
+            <button class="transition ease-in-out delay-100 hover:scale-105 duration-300 mt-5 bg-red-500 text-white active:bg-orange-600 font-bold uppercase text-sm px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none mb-1" type="button">
+                Invite me
+              </button>
+          </a>
+          <a href="#about">
+            <button class="transition ease-in-out delay-100 hover:scale-105 duration-300 mt-5 bg-orange-500 text-white active:bg-orange-600 font-bold uppercase text-sm px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none mb-1" type="button">
+                About Us
+            </button>
+          </a>
+        </p>
+        <br>
+        <p class="text-xs text-gray-500 mt-32">or down... that's alright...</p>
+    
+        <div class="mb-10" id="about">
+          <div class="flex flex-wrap items-center mt-10">
+              <div class="w-full md:w-11/12 px-4 mr-auto ml-auto">
+                <h3 class="text-5xl font-extrabold leading-normal">
+                  About me
+                </h3>
+                <p class="text-lg font-light leading-relaxed mb-4">
+                    <p>Are you tired of adding lots of bots in each server each doing separate things? Well, introducing : Unity!
+                        Unity is a discord bot which has every feature you might possibly need. With more than 300 commands, including the ability to make custom commands, the sky is your limit! And of course, everything is absolutely free (but donations are appreciated 😄)!</p>
+                        <br><h2 class="text-3xl font-extrabold">Moderation</h2>
+                        <p>Unity has <strong>17</strong> advanced moderation commands. This contains basic moderation commands such as : <code>/moderation ban</code>, <code>/moderation kick</code>, <code>/moderation unban</code>, <code>/moderation clear</code>, <code>/moderation timeout</code> and some more advanced commands such as : <code>/moderation tempban</code>, <code>/moderation softban</code>, <code>/moderation nuke</code>, <code>/moderation lockdown</code>, <code>/moderation warn</code>, <code>/moderation demote</code>, etc.</p>
+                        <br><h2 class="text-3xl font-extrabold">Custom Commands</h2>
+                        <p>Unity supports custom commands! You can add and delete custom command. For now it is not extremly advanced, it only supports sending embeds, rugular messages and DMs. You can add custom commands by doing : <code>/custom-commands add command:[command_name] text:[what_the_command_returns]</code> and then follow the setup embed and delete by running : <code>/custom-commands delete command:[command_name]</code></p>
+                        <br><h2 class="text-3xl font-extrabold">Fun</h2>
+                        <p>I am not going to into too much detail on this one, but this bot includes a bunch of fun commands accessible by running <code>/fun</code> which includes memes, user commands (like <code>/fun user hack</code>), text commands which modify how text look (like turning them into emojis) and extra commands like astronomy picture of the day (<code>/fun extra apod</code>)!</p>
+                        <br><h2 class="text-3xl font-extrabold">Soundboard</h2>
+                        <p>Unity contains a soundboard for all your memeing desires! This contains nostalgic sounds from Windows, a few popular meme songs like <strong>Never going to give you up - Rick Astley</strong>, <strong>Roundabout - Yes</strong> (The to be continued meme), etc and of course, actual memes like <strong>FBI OPEN UP!!11!</strong>, <strong>Mission failed.</strong>, etc.</p>
+                        <br><h2 class="text-3xl font-extrabold">Giveaways</h2>
+                        <p>Unity contains giveaways. You can <code>/giveaway start</code>, <code>/giveaway stop</code>, <code>/giveaway drop</code>, <code>/giveaway end</code>, <code>/giveaway edit</code>, <code>/giveaway delete</code>, <code>/giveaway pause</code>, <code>/giveaway unpause</code> and <code>/giveaway reroll</code>. This is everything that you might need when doing giveaways!</p>
+                        <br><h2 class="text-3xl font-extrabold">Economy</h2>
+                        <p>Unity includes advanced economy which has everything you might need! Inspired by unbelievaboat's economy system, you can add items, add money to users, beg for money, work for money and also rob users with this commands respectively <code>/economy additem</code>, <code>/economy addmoney</code>, <code>/economy beg</code>, <code>/economy work</code>, <code>/economy rob</code>, etc.</p>
+                        <br><h2 class="text-3xl font-extrabold">Ticket system</h2>
+                        <p>Do you own a support server or something similiar to it? Well unity has the solution! With a ticket system just as good as ticket bot, you can easily it up with just 2 commands. You can easily add users to a ticket, remove a user from a ticket (other than the person who created the ticket), claim a ticket, unclaim a ticket, etc. When you close a ticket you automaticly get a option to reopen the ticket, delete the ticket channel and of course download a transcript.</p>
+                        <br><h2 class="text-3xl font-extrabold">Sticky messages</h2>
+                        <p>Going to keep it short and simple, you can run <code>/stickymessages stick channel:[channel] message:[message]</code> to stick a embed which contains the text you specified in the <code>message</code> variable. There can be only 1 message stuck to the bottom of any channel (for obvious reasons). To untick a message you can run <code>/stickymessages unstick channel:[channel]</code> which will unstick any message from that channel (that is already a sticky message). You can also list all the stick messages by running <code>/stickymessages messages</code>.</p>
+                        <br>
+                        <p>These are not the only things in this bot of course, there are hundreds of more features but that will be too long for this description. Best part? No pay walls. Developed by Captain McD (me!) and my school friend Unium (The main developer).</p>
+                        <br>
+                        <p>If you find a bug in the bot report the bug by running <code>/report bug</code>, and if you found a user is abusing the features this bot is providing report that user with <code>/report user</code>.</p>
+                  <a href="https://discord.com/api/oauth2/authorize?client_id=1034772571868102676&permissions=8&scope=applications.commands%20bot">
+                    <button class="transition ease-in-out delay-100 hover:scale-105 duration-300 mt-5 bg-red-500 text-white active:bg-orange-600 font-bold uppercase text-sm px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none mb-1" type="button">
+                        Sweet, add the bot!
+                    </button>
+                  </a>
+                </p>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>      
+      <footer
+  aria-label="Site Footer"
+  class="bg-white dark:bg-black lg:grid lg:grid-cols-5"
+>
+  <div class="relative block h-32 lg:col-span-2 lg:h-full">
+    <img
+      src="./images/unity_nbg.png"
+      alt=""
+      class="absolute inset-0 object-cover w-full h-full"
+    />
+  </div>
+
+  <div class="px-4 py-16 sm:px-6 lg:col-span-3 lg:px-8">
+    <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
+      <div>
+        <p>
+          <span
+            class="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400"
+          >
+            Contact us
+          </span>
+
+          <a
+            href="https://discord.gg/gdQaftVKgn"
+            class="block text-2xl font-medium text-gray-900 hover:opacity-75 dark:text-white sm:text-3xl"
+          >
+            discord.gg/gdQaftVKgn
+          </a>
+        </p>
+
+        <ul class="mt-8 space-y-1 text-sm text-gray-700 dark:text-gray-200">
+          <li>Cool multipurpose discord bot.</li>
+        </ul>
+      </div>
+
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+        <div>
+          <p class="font-medium text-gray-900 dark:text-white">Stuff</p>
+
+          <nav aria-label="Footer Navigation - Stuff" class="mt-6">
+            <ul class="space-y-4 text-sm">
+              <li>
+                <a
+                  href="https://discord.com/api/oauth2/authorize?client_id=1034772571868102676&permissions=8&scope=applications.commands%20bot"
+                  class="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                >
+                    Invite me
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://discord.gg/gdQaftVKgn"
+                  class="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                >
+                    Support Server
+                </a>
+              </li>
+        </div>
+      </div>
+    </div>
+
+    <div class="pt-12 mt-12 border-t border-gray-100 dark:border-gray-800">
+        <p class="mt-8 text-xs text-gray-500 dark:text-gray-400 sm:mt-0">
+          &copy; 2023. Unity, all rights reserved.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
